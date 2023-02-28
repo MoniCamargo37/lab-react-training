@@ -45,7 +45,7 @@ function App() {
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
-      <div>
+      <div className="creditCardContainer">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -78,6 +78,7 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+         </div>
         <div className="ratingCard">
           <h1>Rating</h1>
           <Rating>0</Rating>
@@ -107,7 +108,7 @@ function App() {
     licensePlate: "BE33ER"
   }}
 />
-      </div>
+     
     </div>
   );
 }
