@@ -1,32 +1,39 @@
+import VisaLogo from '../assets/images/visa.png';
+import MasterCardLogo from '../assets/images/masterCard.png';
 
 const CreditCard = (props) => {
-  const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } =
-    props;
-
-  const lastFourDigits = number.slice(-4);
-
-//   const cardLogo = type === 'Visa' ? VisaLogo : MasterCardLogo;
-const cardLogo = type === 'Visa' ? '/src/assets/images/visa.png' : '/src/assets/images/master-card.svg';
-
+  const {
+    type,
+    number,
+    expirationMonth,
+    expirationYear,
+    bank,
+    owner,
+    bgColor,
+    color,
+  } = props;
   const cardStyle = {
     backgroundColor: bgColor,
     color: color,
   };
 
+  const cardLogo = type === 'Visa' ? VisaLogo : MasterCardLogo;
+
   return (
     <div className="creditCard" style={cardStyle}>
       <div className="type">
-        <img src={cardLogo} alt={type} />
-        <p  className='cardNumber'>{'••••   ••••   ••••   ' + lastFourDigits}</p>
-        </div>
-       <div className="expireBank">
-          Expires {expirationMonth.toString().padStart(2, '0')}/
-          {expirationYear.toString().slice(-2)}
+        <img src={cardLogo} alt="type" />
+        <p>•••• •••• •••• {number.slice(-4)}</p>
+      </div>
+      <div className="expireBank">
+        <p>
+          Expires {expirationMonth}/{expirationYear}
+        </p>{' '}
         <p>{bank}</p>
-        </div>
-        <div className="ownerCard">
+      </div>
+      <div className="ownerCard">
         <p>{owner}</p>
-        </div>
+      </div>
     </div>
   );
 };

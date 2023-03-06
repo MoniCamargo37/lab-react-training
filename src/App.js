@@ -6,6 +6,14 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -78,37 +86,61 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
-         </div>
-        <div className="ratingCard">
-          <h1>Rating</h1>
-          <Rating>0</Rating>
-          <Rating>1.49</Rating>
-          <Rating>1.5</Rating>
-          <Rating>3</Rating>
-          <Rating>4</Rating>
-          <Rating>5</Rating>
-        </div>
+      </div>
+      <div className="ratingCard">
+        <h1>Rating</h1>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
 
-        <DriverCard
-  name="Travis Kalanick"
-  rating={4.2}
-  img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
-  car={{
-    model: "Toyota Corolla Altis",
-    licensePlate: "CO42DE"
-  }}
-/>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
 
-<DriverCard
-  name="Dara Khosrowshahi"
-  rating={4.9}
-  img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
-  car={{
-    model: "Audi A3",
-    licensePlate: "BE33ER"
-  }}
-/>
-     
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+         <div>
+      <LikeButton />
+      <ClickablePicture
+        img='maxence.png'
+        imgClicked='maxence-glasses.png'
+      />
+    </div>
+    <h2>Carousel: Iteration 10</h2>
+    <Dice/>
+    <h2>Carousel: Iteration 11</h2>
+    <Carousel 
+    images={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}/>
+      <h2>Numbers Table: Iteration 12</h2>
+      <NumbersTable limit={18} />
+      <h2>Facebook: Iteration 13 & 14</h2>
+      <Facebook />
+      <h2>SignupPage: Iteration 15</h2>
+      <SignupPage />
+      <h2>RGBColorPicker: Iteration 16</h2>
+      <RGBColorPicker/>
     </div>
   );
 }

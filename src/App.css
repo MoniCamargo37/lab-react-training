@@ -74,31 +74,30 @@ body {
 
 .creditCard {
   background-color: #fff;
-  width: 400px;
-  height: 200px;
+  width: 25vw;
+  height: 25vh;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
 }
+
 .type {
   text-align: end;
 }
 
 .type img {
-  height: 20px;
+  height: 50px;
+  width: 80px;
 }
 
 .cardNumber {
   font-size: 1.8em;
   text-align: start;
-  width: 90vw;
+  width: 90%;
   margin: 5px 0;
 }
 
@@ -185,4 +184,341 @@ body {
 }
 .driverCard > * {
   margin: 5px;
+}
+
+@media (max-width: 1080px) {
+  /* Main Card */
+  .App {
+    margin-top: 30px;
+  }
+
+  /* Credit Card */
+  .creditCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    font-size: 14px;
+  }
+
+  .creditCard {
+    background-color: #fff;
+    width: 60vw;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .type img {
+    height: 40px;
+    width: 60px;
+  }
+
+  .cardNumber {
+    font-size: 1.4em;
+    margin: 5px 0;
+  }
+
+  .expireBank {
+    font-size: 0.6em;
+    gap: 10px;
+  }
+
+  .ownerCard p {
+    font-size: 0.8em;
+  }
+
+  /* Driver Rating Card */
+  .driverCard {
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 12px;
+  }
+
+  .driverCard img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+  }
+
+  .driverCard h3 {
+    font-size: 1.4em;
+  }
+
+  .driverCard p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 858px) {
+  /* Main Card */
+  .App {
+    margin-top: 30px;
+  }
+
+  /* Credit Card */
+  .creditCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  .creditCard {
+    background-color: #fff;
+    width: 60vw;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .type img {
+    height: 40px;
+    width: 60px;
+  }
+
+  .cardNumber {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+
+  .expireBank {
+    font-size: 0.6em;
+    gap: 10px;
+  }
+
+  .ownerCard p {
+    font-size: 0.8em;
+  }
+
+  /* Driver Rating Card */
+  .driverCard {
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 10px;
+  }
+
+  .driverCard img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .driverCard h3 {
+    font-size: 1.2em;
+  }
+
+  .driverCard p {
+    font-size: 0.6em;
+  }
+  .facebookCard > div {
+    width: 35vw;
+  }
+
+  .facebookCard > div > img {
+    width: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .profileCardFace h1 {
+    margin-top: 5px;
+    font-size: 24px;
+    color: #333;
+  }
+}
+/***************** LikeButton *****************/
+.like-btn {
+  padding: 20px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+/***************** Carousel*****************/
+.carouselCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  padding-top: 50px;
+}
+
+.carouselCard img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.btnCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.carouselCard button {
+  border: none;
+  background: none;
+  margin: 0 0.5rem;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.carouselCard button img {
+  max-width: 30px;
+  height: auto;
+}
+
+/*****************NumbersTable*****************/
+
+.numbersTable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.numberItem {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****************Facebook*****************/
+
+.facebookCard button {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.facebookCard button:hover {
+  background-color: #afeeee;
+}
+
+.facebookCard > div {
+  flex-basis: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.facebookCard > div > img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profileCardFace h1 {
+  margin-top: 5px;
+  font-size: 24px;
+  color: #333;
+}
+
+.profileCardFace p {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+/*****************Form Signup*****************/
+
+.formSignup {
+  max-width: 700px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.formSignup label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.formSignup input[type='text'],
+.formSignup select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formSignup input[type='submit'] {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.passwordStars {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #276dee;
+}
+
+/*****************ColorPicker*****************/
+
+.colorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.colorCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.colorPicker {
+  margin: 10px;
+  width: 300px;
+}
+
+.colorPicker input[type='number'] {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.colorPicker label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.cardRGB {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  align-items: center;
 }
