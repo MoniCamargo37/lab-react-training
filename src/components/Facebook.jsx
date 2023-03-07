@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import profiles from '../data/berlin.json';
+//This component displays a list of profiles from a JSON file. It has functions to filter the profiles by country, and to show more information when clicking on a profile.
+
+
+//This function sets two states: the index of the selected profile and the selected country. There are also three event handlers that allow the user to select a profile, show all profiles or select a country.
 
 function FaceBook() {
   const [selectedProfileIndex, setSelectedProfileIndex] = useState(-1);

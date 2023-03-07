@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import SingleColorPicker from './SingleColorPicker';
+// This component allows users to select a color using RGB values.
 
 const RGBColorPicker = () => {
   const [rValue, setRValue] = useState(255);
   const [gValue, setGValue] = useState(150);
   const [bValue, setBValue] = useState(0);
-
+  //The handleColorChange function updates the corresponding color value (rValue, gValue, or bValue) when the user changes the value of a color picker component.
   const handleColorChange = (color, value) => {
     switch (color) {
       case 'R':
@@ -23,7 +24,7 @@ const RGBColorPicker = () => {
   };
 
   const finalColor = `rgb(${rValue}, ${gValue}, ${bValue})`;
-
+  //In here it  renders four divs, each representing a color picker for one of the RGB values. Each color picker is represented by a SingleColorPicker component, which is passed a color (R, G, or B), and a callback function to handle changes to the color value.
   return (
     <div className="colorContainer">
       <div className="cardRGB">

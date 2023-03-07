@@ -4,6 +4,7 @@ const SingleColorPicker = ({ color, value, onChange }) => {
     onChange(color, event.target.value);
   };
 
+  // This component is used to pick a single color value from a range of 0-255 and update the value when changed.
   return (
     <div>
       <label htmlFor={`color-${color}`}>{`${color.toUpperCase()}: `}</label>

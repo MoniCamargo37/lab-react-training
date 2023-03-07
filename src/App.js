@@ -18,6 +18,7 @@ import RGBColorPicker from './components/RGBColorPicker';
 function App() {
   return (
     <div className="App">
+      <h2>IdCard: Iteration 1</h2>
       <div className="card-container">
         <IdCard
           lastName="Doe"
@@ -38,21 +39,22 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
-
+      <h2>Greetings: Iteration 2</h2>
       <div className="Greetings">
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
-
+      <h2>Random: Iteration 3</h2>
       <div className="Random">
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
-
+      <h2>BoxColor: Iteration 4</h2>
       <div>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
+      <h2>CreditCard: Iteration 5</h2>
       <div className="creditCardContainer">
         <CreditCard
           type="Visa"
@@ -88,7 +90,7 @@ function App() {
         />
       </div>
       <div className="ratingCard">
-        <h1>Rating</h1>
+      <h2>Rating: Iteration 6</h2>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
@@ -96,7 +98,7 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
-
+      <h2>DriverCard: Iteration 7</h2>
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -106,7 +108,7 @@ function App() {
           licensePlate: 'CO42DE',
         }}
       />
-
+   
       <DriverCard
         name="Dara Khosrowshahi"
         rating={4.9}
@@ -116,8 +118,12 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-         <div>
+         <h2>LikeButton: Iteration 8</h2>
+         <div className='likeBtn'>
       <LikeButton />
+      </div>
+      <h2>ClickablePicture: Iteration 9</h2>
+      <div className='clickPicture'>
       <ClickablePicture
         img='maxence.png'
         imgClicked='maxence-glasses.png'

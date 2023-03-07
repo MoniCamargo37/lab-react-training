@@ -6,8 +6,8 @@ function SignupPage() {
   const [nationality, setNationality] = useState('');
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const [setPassword] = useState('');
-  const [passwordStrength, setPasswordStrength] = useState('start');
+  const [password, setPassword] = useState('');
+  const [passwordStrength, setPasswordStrength] = useState('too weak');
   const [isTypingEmail, setIsTypingEmail] = useState(false);
 
   const updateStateCountry = (e) => {
@@ -75,11 +75,11 @@ function SignupPage() {
           <Input.Password />
         </Form.Item>
         <div className="passwordStars">
-          {passwordStrength === 'start' && <p>Password Strength: ✩✩✩✩✩</p>}
-          {passwordStrength === 'weak' && <p>Password Strength: ★✩✩✩✩</p>}
-          {passwordStrength === 'medium' && <p>Password Strength: ★★✩✩✩</p>}
-          {passwordStrength === 'strong' && <p>Password Strength: ★★★✩✩</p>}
-          {passwordStrength === 'perfect' && <p>Password Strength: ★★★★★</p>}
+          {passwordStrength === 'too weak' && <p>Password Security: ✩✩✩✩✩</p>}
+          {passwordStrength === 'weak' && <p>Password Security: ★✩✩✩✩</p>}
+          {passwordStrength === 'medium' && <p>Password Security: ★★✩✩✩</p>}
+          {passwordStrength === 'strong' && <p>Password Security: ★★★✩✩</p>}
+          {passwordStrength === 'perfect' && <p>Password Security: ★★★★★</p>}
         </div>
         <Form.Item label="Nationality">
           <Form.Item
