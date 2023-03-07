@@ -94,9 +94,17 @@ h2  {
   text-align: end;
 }
 
+.type p {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .type img {
   height: 50px;
   width: 80px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .cardNumber {
@@ -112,7 +120,7 @@ h2  {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  font-size: 0.8em;
+  font-size: 1em;
   gap: 20px;
 }
 
@@ -201,15 +209,16 @@ h2  {
   .creditCardContainer {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 50%;
     height: auto;
-    margin: auto;
+    margin-right: 120px;
+    margin-left: 170px;
     font-size: 14px;
   }
 
   .creditCard {
     background-color: #fff;
-    width: 60vw;
+    width: 90%;
     height: auto;
     border-radius: 10px;
   }
@@ -220,17 +229,17 @@ h2  {
   }
 
   .cardNumber {
-    font-size: 1.4em;
+    font-size: 2em;
     margin: 5px 0;
   }
 
   .expireBank {
-    font-size: 0.6em;
+    font-size: 1.2em;
     gap: 10px;
   }
 
   .ownerCard p {
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   /* Driver Rating Card */
@@ -270,27 +279,35 @@ h2  {
     height: auto;
     margin: auto;
     font-size: 12px;
+    margin-right: 120px;
+    margin-left: 170px;
   }
 
   .creditCard {
     background-color: #fff;
     width: 60vw;
-    height: auto;
+    height: 150px;
     border-radius: 10px;
   }
-
+  .type p {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
   .type img {
-    height: 40px;
-    width: 60px;
+    height: 20px;
+    width: 30px;
   }
 
   .cardNumber {
     font-size: 1.2em;
-    margin: 5px 0;
+
   }
 
   .expireBank {
-    font-size: 0.6em;
+    font-size: 0.8em;
     gap: 10px;
   }
 
